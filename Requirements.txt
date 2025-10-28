@@ -1,0 +1,19 @@
+streamlit~=1.50.0
+pandas~=2.3.3
+python-dotenv~=1.2.1
+protobuf~=6.33.0
+requests~=2.32.5
+
+
+# requirements.txt
+#
+# Minimal required packages for the Sensor -> Messenger -> Console Output flow.
+
+# 1. Agent Framework Dependencies
+#   Includes the base for defining agent roles and orchestration tasks.
+#   (CrewAI/LangGraph often relies on LangChain core, even if minimal tools are used)
+langchain-core
+
+# 2. HTTP Requests
+#   Used conceptually in api_tools.py to fetch external data (Weather, City Data).
+requests
